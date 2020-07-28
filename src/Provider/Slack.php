@@ -23,7 +23,7 @@ class Slack extends AbstractProvider
      */
     public function getBaseAuthorizationUrl()
     {
-        return "https://slack.com/oauth/authorize";
+        return "https://slack.com/oauth/v2/authorize";
     }
 
     /**
@@ -35,7 +35,7 @@ class Slack extends AbstractProvider
      */
     public function getBaseAccessTokenUrl(array $params)
     {
-        return "https://slack.com/api/oauth.access";
+        return "https://slack.com/api/oauth.v2.access";
     }
 
     /**
